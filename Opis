@@ -1,0 +1,36 @@
+Funkcje
+- Gracz może otworzyć zwykly sklep jak i offline 
+- Dynamiczne ceny i czas otwarcia sklepu offline ustawiane w bazie
+- Gracz może edytować sklep/nazwę sklepu bez konieczności stania obok sklepu
+- Gracz może pobrać zarobione Yangi ze sklepu jak i go zamknąć bez konieczności stania obok sklepu
+- Po otworzeniu sklepu nazwa zmieni kolor na niebieski (Zapamiętywanie przeglądnietych już sklepów)
+- Po restarcie serwera bądź awarii (crashu) sklepy będą stały tam gdzie wcześniej
+- Możliwość wyłączenia pokazywania nazw npc sklepów (Zmniejsza lagi przy większej ilości sklepów)
+- Automatyczne zamykanie sklepu gdy gracz kupi ostatni przedmiot
+- Zapisywanie cen przy tworzeniu sklepu
+- Ustawienie widoczności nazw sklepów poprzez dystans w Opcjach Gry
+- Sklepy offline mają własny kolor nazw jak i na minimapie
+- Sklepy współpracują z usuniętym limitem Yang
+- Sklepy współpracują z systemem szarf
+- Sklepy są zabezpieczone przed wszelkimi próbami ataków
+- System jest w pełni zoptymalizowany do jak najlepszej i jak najstabilniejszej pracy
+- Sklepy są przetłumaczone na 3 języki: Polski,Angielski,Niemiecki,Rumuński
+
+Komendy:
+/delete_shop <rodzaj> <argument> 
+Rodzaje:
+	shopid - Usuwanie sklepu po ID
+	player - Usuwanie wszystkich sklepów po nicku gracza
+Przykłady:
+	/delete_shop player Best4ever
+	/delete_shop shopid 1
+/update_shop <ID sklepu> - Przeładowanie itemów w sklepie jeśli je edytowałeś w bazie
+
+Nowe event flagi:
+/e shop_max <count> - Maksymalna ilość sklepów na jednej postaci, domyślnie limit to 2 sklepy
+/e shop_off 1 - Wyłączenie tworzenia sklepów w grze
+/e shop_off 0 - Włączenie tworzenia sklepów w grze
+/e shop_dist <0 - 10000> - Ustawienie dystansu w jakim ma pokazywać NPC sklepó, domyślnie system został wyłączony
+
+
+
